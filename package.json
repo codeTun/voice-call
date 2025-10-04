@@ -1,0 +1,35 @@
+{
+  "name": "agri-health-voice-alerts",
+  "version": "1.0.0",
+  "description": "A proactive voice alert system for women farmers using Twilio API",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "node src/test-call.js",
+    "test-hamza": "node test-hamza.js",
+    "call-hamza": "node test-hamza-simple.js",
+    "message-perso": "node test-messages-personnalises.js",
+    "message-rapide": "node message-rapide.js",
+    "message-detaille": "node message-detaille.js"
+  },
+  "keywords": [
+    "twilio",
+    "voice-alerts",
+    "agriculture",
+    "health",
+    "rural-communication"
+  ],
+  "author": "Agri-Hope Team",
+  "license": "MIT",
+  "dependencies": {
+    "twilio": "^5.3.0",
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
